@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid Flex</title>
+    <link rel="icon" type="icon/image" href="img/maxresdefault.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Tipos de cajas padres</h1>
+    <hr>
+    <div class="container bg-primary">
+        Caja con separaciones 
+    </div>
+    <div class="container-fluid bg-secondary text-light">
+        Caja sin separaciones
+    </div>
+    <h1>Filas y Columnas</h1>
+    <hr>
+   <div class="container bg-primary">
+       <div class="row p-5">
+           <div class="col-6 col-xl-3 bg-secondary text-light">
+               Mi Columna 1
+           </div>
+           <div class="col-6 col-xl-3 bg-warning text-danger">
+            Mi Columna 2
+        </div>
+        <div class="col-6 col-xl-3 bg-info text-darkxl">
+            Mi Columna 3
+        </div>
+        <div class="col-6 col-xl-3 bg-danger text-white">
+            Mi Columna 4
+        </div>
+       </div>
+   </div>
+  <!-- Mi ejercicio de columnas --> 
+  <div class="container-fluid bg-secondary text-light">
+    <div class="row p-5">
+        <div class="col-6 col-xl-3 order-col-1 bg-secondary text-light">
+            Mi Columna 1
+        </div>
+        <div class="col-6 col-xl-3 order-col-2 bg-warning text-danger">
+         Mi Columna 2
+     </div>
+     <div class="col-6 col-xl-3 order-col-3 bg-info text-darkxl">
+         Mi Columna 3
+     </div>
+     <div class="col-6 col-xl-3 order-col-1 bg-danger text-white">
+         Mi Columna 4
+     </div>
+    </div>
+</div>
+<hr>
+<h1>Ordenar las Columnas</h1>
+<div class="container-fluid bg-secondary">
+    <div class="row">
+        <div class="col-xl-1 order-12 order-xl-1 order-md-6 bg-primary text-white">Columna 1</div>
+        <div class="col-xl-1 order-11 order-xl-2 order-md-5 bg-secondary text-white">Columna 2</div>
+        <div class="col-xl-1 order-10 order-xl-3 order-md-4 bg-success text-white">Columna 3</div>
+        <div class="col-xl-1 order-9 order-xl-4 order-md-3 bg-danger text-white">Columna 4</div>
+        <div class="col-xl-1 order-8 order-xl-5 order-md-2 bg-warning text-dark">Columna 5</div>
+        <div class="col-xl-1 order-7 order-xl-6 order-md-1 bg-info text-white">Columna 6</div>
+        <div class="col-xl-1 order-6 order-xl-7 order-md-12 bg-light text-dark">Columna 7</div>
+        <div class="col-xl-1 order-5 order-xl-8 order-md-11 bg-dark text-white">Columna 8</div>
+        <div class="col-xl-1 order-4 order-xl-9 order-md-10 bg-white text-dark">Columna 9</div>
+        <div class="col-xl-1 order-3 order-xl-10 order-md-9 bg-transparent text-dark">Columna 10</div>
+        <div class="col-xl-1 order-2 order-xl-11 order-md-8 bg-primary text-white">Columna 11</div>
+        <div class="col-xl-1 order-1 order-xl-12 order-md-7 bg-warning text-dark">Columna 12</div>
+    </div>
+</div>
+</div>
+<!-- otro ejercicio --> 
+<h1>Columnas Inteligentes</h1>
+<hr>
+<div class="container bg-primary p-5">
+    <div class="row row-cols-2 row-cols-6col ">
+     <div class="col col-xl bg-danger text-white">Columna 1</div>
+     <div class="col col-xl bg-dark text-white">Columna 2</div>
+     <div class="col col-xl bg-white text-dark">Columna 3</div>
+     <div class="col col-xl bg-success text-white">Columna 4</div>
+     <div class="col col-xl bg-white text-dark">Columna 5</div>
+     <div class="col col-xl bg-success text-white">Columna 6</div>
+    </div>
+</div>
+<!-- otro ejercicio --> 
+<h1>Alinear Filas</h1>
+<hr>
+<div class="container bg-primary p-5">
+    <div class="row align-items-center">
+        <div class="col bg-success text-white">Columna 1,Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores optio magni ab at rerum omnis laborum molestiae, eum dolores ipsum, doloremque soluta excepturi! Molestiae perferendis dolore dicta, incidunt ipsum blanditiis?</div>
+        <div class="col bg-white text-dark">Columna 2</div>
+        <div class="col bg-dark text-white">Columna 3,Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione dolores, quaerat dolorum debitis labore, temporibus</div>
+    </div>
+</div>
+<!-- otro ejercicio --> 
+<h1>Alinear Columnas</h1>
+<hr>
+<div class="container bg-primary p-5">
+    <div class="row">
+        <div class="col col-xl align-self-start bg-success text-white">Columna 1,Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores optio magni ab at rerum omnis laborum molestiae, eum dolores ipsum, doloremque soluta excepturi! Molestiae perferendis dolore dicta, incidunt ipsum blanditiis?</div>
+        <div class="col col-xl align-self-end align-self-xl-center bg-white text-dark">Columna 2</div>
+        <div class="col col-xl align-self-end  bg-dark text-white">Columna 3,Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione dolores, quaerat dolorum debitis labore, temporibus</div>
+    </div> 
+</div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
